@@ -54,16 +54,8 @@ function Dashboard() {
     <>
       <Navbar />
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "2fr 1fr",
-          gap: "16px",
-          padding: "24px",
-          fontFamily: "Arial, sans-serif",
-          minHeight: "100vh",
-        }}
-      >
+      <div className="dashboard-grid">
+      
         {/* LEFT PANEL */}
         <div>
           {/* HEADER */}

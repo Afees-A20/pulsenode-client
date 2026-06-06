@@ -1,10 +1,11 @@
 .dashboard-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
   gap: 16px;
+  padding: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .dashboard-grid {
     grid-template-columns: 1fr;
   }

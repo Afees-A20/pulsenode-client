@@ -1,0 +1,73 @@
+.control-panel {
+  margin-top: 30px;
+
+  background-color: #1f2937;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  border: 1px solid #374151;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.control-panel h3 {
+  margin-bottom: 16px;
+
+  color: #f9fafb;
+
+  font-size: 1.2rem;
+}
+
+.control-buttons {
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+.open-btn {
+  background-color: #ef4444;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 18px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.open-btn:hover {
+  transform: translateY(-2px);
+}
+
+.close-btn {
+  background-color: #10b981;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 18px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+  transition: all 0.25s ease;
+}
+
+.close-btn:hover {
+  transform: translateY(-2px);
+}

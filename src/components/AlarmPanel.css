@@ -1,0 +1,134 @@
+.alarm-module {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.alarm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.alarm-header h3 {
+  color: #f8fafc;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.alarm-count {
+  background-color: #334155;
+  color: #94a3b8;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Modern Tabs */
+.alarm-tabs {
+  display: flex;
+  background-color: #0f172a;
+  padding: 4px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.alarm-tabs button {
+  flex: 1;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.alarm-tabs button.active {
+  background-color: #334155;
+  color: #f8fafc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Alarm List with proper gaps */
+.alarm-list {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Proper spacing between inline items */
+}
+
+.alarm-card {
+  background-color: #0f172a;
+  border-left: 4px solid #334155;
+  padding: 14px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.alarm-card:hover {
+  background-color: #1a2436;
+}
+
+.alarm-card.acknowledged {
+  opacity: 0.6;
+  border-left-color: #475569;
+}
+
+.alarm-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.severity-badge {
+  align-self: flex-start;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.severity-badge.critical {
+  background-color: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.severity-badge.warning {
+  background-color: rgba(245, 158, 11, 0.2);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.alarm-message {
+  color: #f8fafc;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.alarm-time {
+  color: #64748b;
+  font-size: 0.8rem;
+}
+
+.no-alarms {
+  text-align: center;
+  color: #64748b;
+  padding: 40px 0;
+  font-style: italic;
+}

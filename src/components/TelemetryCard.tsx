@@ -1,4 +1,5 @@
 import StatusIndicator from "./StatusIndicator";
+import "./TelemetryCard.css";
 
 interface TelemetryCardProps {
   data: {

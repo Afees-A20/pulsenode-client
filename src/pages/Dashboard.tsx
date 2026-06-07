@@ -121,7 +121,7 @@ function Dashboard() {
             )}
           </div>
 
-          <ControlPanel />
+          <ControlPanel breakerStatus={systemState?.breakerStatus} />
         </div>
 
         {/* RIGHT PANEL */}
